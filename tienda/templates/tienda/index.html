@@ -1,0 +1,36 @@
+{% extends 'tienda/base.html' %}
+
+{% block content %}
+
+<section class="beat-player">
+    
+    <div class="table-container">
+        <table class="playlist">
+            <thead>
+                <tr>
+                    <th class="th-name">Name</th>
+                    <th class="th-bpm">BPM</th>
+                    <th class="th-image">Image</th>
+                    <th class="th-carrito small-cell">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for beat in beats %}
+                <tr>
+                    <td class="beat-name" data-label="Name">{{ beat.title }}</td>
+                    <td class="beat-bpm" data-label="BPM">{{ beat.bpm }}</td>
+                    <td class="beat-image" data-label="Image">{{ beat.image }}</td>
+                    <td class="beat-carrito" data-label="Price">
+                        <figure>
+                            <i class="bi bi-cart"></i>
+                        </figure>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+</section>
+
+{% endblock %}
