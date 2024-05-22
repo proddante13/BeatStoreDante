@@ -221,3 +221,48 @@ audio{
     color: #121212;
 }
 
+.payment-methods{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.payment{
+    max-width: 40px;
+}
+
+.mpago{
+    background-color:white ;
+    clip-path: inset(7px 0);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px
+    }
+
+    .payment-methods {
+        order: 1;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .social-media {
+        order: 2;
+        margin-top: 5px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .faq-footer {
+        order: 3;
+        margin-top: 10px;
+    }
+}
