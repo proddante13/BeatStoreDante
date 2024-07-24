@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     display: flex;
     flex-direction: column;
     background-color: #212121;
@@ -54,7 +54,7 @@ h1{
     gap: 20px;
     margin: 0 auto; /* Esto centrará el contenedor horizontalmente */
     max-width: 1500px;
-    /* margin: 0 20px; */
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -135,7 +135,6 @@ button:hover{
     display: flex;
     padding: 40px;
     bottom: 0;
-    width: 100%;
     background-color: #121212;
     justify-content: space-between;
     align-items: center;
@@ -265,4 +264,26 @@ audio{
         order: 3;
         margin-top: 10px;
     }
+}
+
+.add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+    max-height: 30px;
+    /* border: 1px solid #b3b3b3; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#carrito-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#carrito-img:hover{
+    color: #121212;
 }

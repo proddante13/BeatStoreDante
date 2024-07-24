@@ -21,9 +21,12 @@
                     <td class="beat-bpm" data-label="BPM">{{ beat.bpm }}</td>
                     <td class="beat-image" data-label="Image">{{ beat.image }}</td>
                     <td class="beat-carrito" data-label="Price">
-                        <figure>
-                            <i class="bi bi-cart"></i>
-                        </figure>
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <button class="add-button" type="submit">
+                                <i id="carrito-img" class="bi bi-cart"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
                 {% endfor %}
