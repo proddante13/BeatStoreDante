@@ -1,197 +1,54 @@
 {% extends 'tienda/base.html' %}
 
 {% block content %}
-<div class="title">
-    Licencias
+
+<div class="container-licencias">
+    <div class="container-licencia">
+        <div class="tipo-licencia">Básica</div>
+        <div class="precio-licencia">$19,99</div>
+        <ul class="caracteristicas-licencia">
+            <li>Archivo Wav</li>
+            <li>Stems</li>
+            <li>Sin tag de productor</li>
+            <li>Monetiza hasta 100.000 reproducciones(Spotify,Youtube,etc.)</li>
+            <li>1 video musical</li>
+        </ul>
+        <div class="ver-licencia">
+            <button class="boton-ver-licencia">ver licencia</button>
+        </div>
+    </div>
+
+
+    <div class="container-licencia">
+        <div class="tipo-licencia">Premium</div>
+        <div class="precio-licencia">$49,99</div>
+        <ul class="caracteristicas-licencia">
+            <li>Archivo Wav</li>
+            <li>Stems</li>
+            <li>Sin tag de productor</li>
+            <li>Monetiza hasta 100.000 reproducciones(Spotify,Youtube,etc.)</li>
+            <li>1 video musical</li>
+        </ul>
+        <div class="ver-licencia">
+            <button class="boton-ver-licencia">ver licencia</button>
+        </div>
+    </div>
+
+
+    <div class="container-licencia">
+        <div class="tipo-licencia">Ilimitada</div>
+        <div class="precio-licencia">$99,99</div>
+        <ul class="caracteristicas-licencia">
+            <li>Archivo Wav</li>
+            <li>Stems</li>
+            <li>Sin tag de productor</li>
+            <li>Monetiza hasta 100.000 reproducciones(Spotify,Youtube,etc.)</li>
+            <li>1 video musical</li>
+        </ul>
+        <div class="ver-licencia">
+            <button class="boton-ver-licencia">ver licencia</button>
+        </div>
+    </div>
 </div>
-<div class="container">
-    <div class="licencias">
-        <h3 class="categoria-lic">Básica</h3>
-        <div class="price">
-            $19,99
-        </div>
-        <ul>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                WAV
-            </li>
-            <li class="caracteristicas">
-                <span id="equis" class="material-symbols-outlined">Close</span>
-                STEMS
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Audio
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Video
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                2000 distribuciones de copias
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                1 video musical
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Sin tag de productor 
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-        </ul>
-        <div class="boton">
-            <button>Ver Licencia</button>
-        </div>
-    </div>
-    <div class="licencias">
-        <h3 class="categoria-lic">Estándar</h3>
-        <div class="price">
-            $49,99
-        </div>
-        <ul>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                WAV
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                STEMS
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Audio
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Video
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                2000 distribuciones de copias
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                1 video musical
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Sin tag de productor 
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-        </ul>
-        <div class="boton">
-            <button>Ver Licencia</button>
-        </div>
-    </div>
-    <div class="licencias">
-        <h3 class="categoria-lic">Premium</h3>
-        <div class="price">
-            $19,99
-        </div>
-        <ul>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                WAV
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                STEMS
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Audio
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Video
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                2000 distribuciones de copias
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                1 video musical
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Sin tag de productor 
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-        </ul>
-        <div class="boton">
-            <button>Ver Licencia</button>
-        </div>
-    </div>
-    <div class="licencias">
-        <h3 class="categoria-lic">Unlimited</h3>
-        <div class="price">
-            $19,99
-        </div>
-        <ul>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                WAV
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                STEMS
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Audio
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                100.000 Reproducciones de Video
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                2000 distribuciones de copias
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                1 video musical
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Sin tag de productor 
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-            <li class="caracteristicas">
-                <span class="material-symbols-outlined">done</span>
-                Mp3
-            </li>
-        </ul>
-        <div class="boton">
-            <button>Ver Licencia</button>
-        </div>
-    </div>
-</div>   
+
 {% endblock %}

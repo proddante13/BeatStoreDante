@@ -4,8 +4,8 @@ from .models import Beat
 
 
 def home(request):
-    beat = Beat.objects.all()
-    return render(request, 'tienda/index.html',{'beats':beat})
+    beats = Beat.objects.all()
+    return render(request, 'tienda/index.html',{'beats':beats})
 
 
 def base(request):

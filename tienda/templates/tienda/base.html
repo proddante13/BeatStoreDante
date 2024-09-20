@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'tienda/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'tienda/css/media_player.css' %}">
+    <link rel="stylesheet" href="{% static 'tienda/css/licencias.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -24,7 +26,7 @@
             
         </nav>
 
-    </header>`
+    </header>
     {% block content %}
     {% endblock %}
 
@@ -32,28 +34,30 @@
     <Footer class="footer">
         <a href="#" class="faq-footer">FAQ</a>
         <div class="payment-methods">
-            <img class="payment mpago" src="{% static 'tienda/images/payment-methods/mercado-pago-logo-vector-2023.svg' %}" alt="mercadopago">
+            <img class="payment mpago" src="{% static 'tienda/images/payment-methods/Mercado_Pago-OGfnlreJZ_brandlogos.net.svg' %}" alt="mercadopago">
             <img class="payment" src="{% static 'tienda/images/payment-methods/visa.svg' %}" alt="visa">
             <img class="payment" src="{% static 'tienda/images/payment-methods/mastercard-alt.svg' %}" alt="mastercard">
             <img class="payment" src="{% static 'tienda/images/payment-methods/paypal.svg' %}" alt="paypal">
         </div>
-        <ul class="social-media">
-            <li class="social-media">
-                <a href="https://www.instagram.com/prod.dante13/" target="_blank">
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </li>
-            <li class="social-media">
-                <a href="https://www.youtube.com/channel/UCph2hpGBhuGK7hE4Ptamkmg" target="_blank">
-                    <i class="bi bi-youtube"></i>
-                </a>
-            </li>
-            <li class="social-media">
-                <a href="https://open.spotify.com/intl-es/artist/26wdlrGgjODPayiEJMGsme?si=hl-ANkeNTmiOzFoAnZrmhg" target="_blank">
-                    <i class="bi bi-spotify"></i>
-                </a>
-            </li>
-        </ul>
+        <div class="social-media-container">
+            <ul class="social-media">
+                <li class="social-media">
+                    <a href="https://www.instagram.com/prod.dante13/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://www.youtube.com/channel/UCph2hpGBhuGK7hE4Ptamkmg" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://open.spotify.com/intl-es/artist/26wdlrGgjODPayiEJMGsme?si=hl-ANkeNTmiOzFoAnZrmhg" target="_blank">
+                        <i class="bi bi-spotify"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </Footer>
 </body>
 </html>

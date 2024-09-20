@@ -1,0 +1,53 @@
+.container-licencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+
+.container-licencia{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 350px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.tipo-licencia{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.precio-licencia{
+    text-align: center;
+}
+
+
+
+.caracteristicas-licencia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+    flex-shrink: 1;
+}
+.ver-licencia{
+    display: flex;
+    align-self: center;
+    margin: 10px 0;
+}
+
+.boton-ver-licencia{
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 10px;
+    cursor: pointer;
+    max-width: 100%;
+}
