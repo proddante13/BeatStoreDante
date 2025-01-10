@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* AUDIO PLAYER  */
+
+.audio-player{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.audio-player-image{
+        width: 170px;
+        height: 170px;
+        overflow: hidden;
+        border-radius: 5px;
+}
+
+.player-btn-visualizer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+
+#waveform{
+    width: 100%;
+    height: 60%;
+}
+
+#playPause{
+    background: none; /* Elimina el fondo del botón */
+    border: none;     /* Elimina el borde del botón */
+
+}
+
+.player-btns{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    position: relative;
+    margin: auto;
+    gap: 15px;
+
+}
+
+.player-btns i{
+    border-radius: 30px;
+    font-size: 50px;
+    color: #08f372;
+    cursor: pointer;
+
+}
+
+
+/* PLAYLIST */
+
+.song{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    border-bottom: 0.5px solid #08f372;
+    border-radius: 10px;
+    background-color: #051a0d;
+    color: #08f372;
+}
+
+.song-image{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #037e3a;
+   
+}
+
+img{
+   width: 100%;
+   height: auto;
+}
+
+h4{
+    font-family: Roboto;
+    flex-basis: 130px;
+    color: #00ff73;
+}
+
+.song span{
+    font-family: Roboto;
+    min-width: 20px;
+    text-align: center;
+    flex: 0.5;
+}
+
+.bi-download{
+    margin-left: 60px;
+    padding: 2px 10px;
+    text-align: center;
+    color: #051a0d;
+    background-color: #08f372;
+    border-radius: 3px;
+    
+}
+
+.bi-cart2{
+    margin-left: auto;
+    padding: 2px 10px;
+    text-align: center;
+    color: #051a0d;
+    background-color: #08f372;
+    border-radius: 3px;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 320px) and (max-width: 768px){
+    .song span{
+        display: none;
+    }
+}

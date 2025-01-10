@@ -2,18 +2,86 @@
 
 {% block content %}
 
-<div class="media-player-container">
-    <div class="cover-player-container">
-
-    </div>
-    <div class="track-playlist-container">
-        <div class="browser">
-
+<div class="container">
+        
+    <div class="audio-player">
+        <div class="audio-player-image">
+            <img src="./static/tienda/images/gengar.jpg" alt="Portada del álbum">
         </div>
-        <div class="track">
-            
+        <div class="player-btn-visualizer">
+            <div id="waveform-container">
+                <div id="waveform"></div>
+                <button id="prev-btn">
+                    <i class="bi bi-skip-backward-fill"></i>
+                </button>
+                <button id="rewind-btn">
+                    <i class="bi bi-rewind-fill"></i>
+                </button>
+                <button id="play-pause-btn">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+                <button id="forward-btn">
+                    <i class="bi bi-fast-forward-fill"></i>
+                </button>
+                <button id="next-btn">
+                    <i class="bi bi-skip-forward-fill"></i>
+                </button>
+                 
+                <!-- Control de volumen
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1"> -->
+        
+                <!-- Reemplaza el control de volumen existente con este código -->
+                <div id="volume-control">
+                    <button id="mute-btn">
+                        <i class="bi bi-volume-up-fill"></i>
+                    </button>
+                    <div class="volume-slider-container">
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                        <div class="volume-slider-fill"></div>
+                    </div>
+                    <span id="volume-percentage">100%</span>
+                </div>
+        
+            </div>
         </div>
     </div>
+
+    {% for beat in beats %}
+    <div class="song">
+        <div class="song-image">
+            {% if beat.audio %}
+            <audio class="audio-element" controls src="{{ beat.audio.url }}" data-audio="{{ beat.audio.url }}"></audio>
+            {% else %}
+            <div></div>
+            {% endif %}
+            {% if beat.image %}
+            <img src="{{ beat.image.url }}" alt="">
+            {% else %}
+            <img src="./static/tienda/images/logo reloj.jpg" alt="">
+            {% endif %}
+        </div>
+        <h4>{{ beat.title }}</h4>
+        {% if beat.key %}
+        <span class="key">{{ beat.key }}</span>
+        {% else %}
+        <span class="key">-</span>
+        {% endif %}
+        <span class="bpm">{{ beat.bpm }}</span>
+        <a href="#" download class="btn" aria-label="download" title="Download">
+            <i class="bi bi-download"></i>
+        </a>
+        <a href="#" class="btn" title="Add to Cart">
+            <i class="bi bi-cart2"></i>
+        </a>
+    </div>
+    {% endfor %}
+
 </div>
 
+   
+
 {% endblock %}
+
+
+
+
